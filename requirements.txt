@@ -1,4 +1,4 @@
 zxcvbn
 requests
 argparse
-
+pyfiglet
