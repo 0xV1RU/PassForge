@@ -24,8 +24,24 @@
 You need Python 3 to run PassForge.
 
 ## ⚙️ Usage
-
-### 🔍 Analyze a Password
+#### 1) Clone the Repository from GitHub
+```bash
+sudo git clone https://github.com/0xV1RU/PassForge.git.
+cd PassForge
+```
+#### 2) Create Virtual Environment (Optional but Recommended) 
+```bash
+python -m venv venv
+venv\Scripts\activate   # Windows
+# OR
+source venv/bin/activate   # Linux/Mac
+```
+#### 3) Install Required Dependencies
+```bash
+pip install -r requirements.txt
+```
+#### 4) Run the Tool from *`main.py`*
+#### 🔍 Analyze a Password
 ```bash
 python main.py --analyze "Enter Your Passwd Here"
 ```
@@ -34,11 +50,17 @@ python main.py --analyze "Enter Your Passwd Here"
 - Suggestions to improve
 - Breach check result (via HaveIBeenPwned)
 
-### 🧪Generate a Custom Wordlist
+#### 🧪Generate a Custom Wordlist
 ```bash
 python main.py --generate-wordlist "Enter words for wordlist"
 ```
-- wordlist saved on wordlist.txt file.
+- Variations of your input saved in `wordlist.txt`
+- Includes:
+  - Capitalization
+  - Reversals
+  - Leetspeak (`a→@`, `i→1`)
+  - Numbers/symbols
+  - Year suffix (`2024`, `@123`, `etc.`)
 
 ## ⚠️ Disclaimer
  > *This tool is created for educational & ethical hacking purposes only. Never use against unauthorized systems.*
