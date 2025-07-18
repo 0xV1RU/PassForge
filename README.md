@@ -1,5 +1,5 @@
 # 🔐 PassForge — Password Security Toolkit
-***PassForge*** - A password strength analyzer and custom wordlist generator. *PassForge* is a powerful and flexible Python-based command-line tool to:
+***PassForge*** - *PassForge* is a powerful and flexible Python-based command-line tool to:
 - ✅ Analyze password strength using zxcvbn entropy logic  
 - 🚨 Check if a password has been leaked in known data breaches (via HaveIBeenPwned API)  
 - 🧰 Generate advanced wordlists using custom keywords for CTFs or penetration testing  
